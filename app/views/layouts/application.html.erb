@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Avito</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <!--<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-yr5U5tv5b6LdUywtbQ0wogBCMYjMkafE0e94hgPT5zf6U5C5U+I6RRY0YrjwWZosvGSGejddRZZOzL8OjW9XvQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+   
+    </head>
+
+  <body>
+  
+    <%= render 'layouts/navigation' %>
+    <%= render 'layouts/filter' %>
+    <%= render 'layouts/slider' %>
+    <%= yield %>
+    <%= render 'layouts/footer' %>
+  </body>
+</html>

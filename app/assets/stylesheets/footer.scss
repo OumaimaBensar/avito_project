@@ -1,0 +1,64 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.footer {
+  padding-top: 30px;
+  height: 300px; /* Set to the height of your footer */
+  background-color: rgb(245, 239, 239);
+  margin-top:30px;
+  //position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+#new{
+  
+    font-family: Rubik,Roboto,Tajawal,-apple-system,BlinkMacSystemFont,Helvetica Neue,sans-serif;
+    text-align: unset;
+    padding: 4px 8px;
+    line-height: 16px;
+    font-size: 10px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    background-color: rgb(255, 76, 89);
+    border-radius: 24px;
+    position: relative;
+    right: 0px;
+    margin-left: 8px;
+
+}
+
+a ,p {
+    
+    display: inline;
+}
+
+ul.sc-14wc6tm-10.telecharger li {
+  display: inline-block;
+  margin-right: 10px; /* add some spacing between list items */
+  margin-top:10px
+}
+
+ul.sc-14wc6tm-10.telecharger{
+    margin-left:-34px ;
+}
+
+.up_mvt {
+  transition: all 0.2s ease-in-out;
+  
+}
+
+
+.up_mvt:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.round {
+    padding-bottom: 1px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
