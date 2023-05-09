@@ -1,0 +1,28 @@
+<h1><%= @article.title%></h1>
+
+<div class="product">
+  <img src="/assets/image1.jpeg" alt="Product Image">
+  <div class="product-info">
+    <h2 class="product-title">Title</h2>
+    <p class="product-description">Description</p>
+    <ul class="product-details">
+      <li><strong>Type:</strong><%= @article.article_type%></li>
+      <li><strong>Price:</strong> <%= @article.price%></li>
+      <li><strong>Etat:</strong> <%= @article.etat%></li>
+      <li><strong>Annee Modele:</strong><%= @article.annee_modele%></li>
+      <li><strong><%= @article.orgine%></strong></li>
+      <li><strong>Premiere Main:</strong><%= @article.premiere_main%></li>
+      <li><strong>Marque:</strong> <%= @article.marque%></li>
+      <li><strong>Nombre Portes:</strong> <%= @article.nombre_portes%></li>
+      <li><strong>Modele:</strong> <%= @article.modele%></li>
+      <li><strong>Kilometrage:</strong> <%= @article.kilometrage%></li>
+      <li><strong>Ville:</strong> <%= @article.ville%></li>
+    </ul>
+    <div class="user-details">
+  <p class="username"><%= @article.user.nom%></p>
+  <p class="phone"><%= @article.user.tele if @article.user%></p>
+  <p class="city"><%= @article.user.ville if @article.user%></p>
+</div>
+
+  </div>
+</div>

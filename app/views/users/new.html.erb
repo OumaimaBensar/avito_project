@@ -1,0 +1,88 @@
+
+<!-- ********************-->
+<div class="container">
+
+<div class="left" style="float:left;">
+<!--<%= image_tag "/assets/avito-logo.PNG", alt: "Company Logo" %>-->
+<img src="/assets/login_img.PNG" class="img-fluid" style="min-height:100%;" />
+</div>
+
+<div class="right-side" style="margin-left:70px;">
+<div class="az" >
+<h1 class="pb-3" style="margin-bottom: 20px; margin-left:500px">Créer un compte Avito.ma</h1>
+</div>
+<div class="ae" style="margin-left:500px">
+<p class="pb-3" >Entrez vos coordonnées ci-dessous</p>
+</div>
+<%= form_with model: @user do |f| %>
+
+<div class="form-group">
+        		<div class=" control-label">
+                  
+        		  <%= f.label :Nom %>
+        		
+        		    <div class="">
+        	  	    <%= f.text_field :nom, class:"form-control",  placeholder:"Entrer votre nom"%>
+        		    </div>
+        	    </div>
+                <div class=" control-label">
+                  
+        	        <%= f.label :"E-mail" %>
+        		
+        		    <div class="">
+        	    	<%= f.email_field :email, class:"form-control",  placeholder:"Entrer votre mail"%>
+        		    </div>
+        	    </div>
+                <div class=" control-label">
+                  
+        		    <%= f.label :Téléphone %>
+        		
+        		    <div class="">
+        	  	    <%= f.text_field :tele, class:"form-control",  placeholder:"Entrer votre num de tele"%>
+        		    </div>
+                </div>
+        	  
+        		<div class=" control-label">
+        		    <%= f.label :"Mots de passe" %>
+        		
+        		    <div class="">
+        	  	    <%= f.password_field :password , class:"form-control",  placeholder:"Entrer votre password"%>
+        		    </div>
+        	    </div>
+              
+        		<div class=" control-label">
+        		    <%= f.label :"Confirmer le mots de passe" %>
+        		
+        		    <div class="">
+        	  	    <%= f.password_field :password_confirmation , class:"form-control",  placeholder:"Entrer votre password"%>
+        		    </div>
+        	    </div>
+                <div class=" control-label">
+                  
+        		    <%= f.label :Ville %>
+        		
+        		    <div class="">
+        	  	    <%= f.text_field :ville, class:"form-control",  placeholder:"Entrer votre ville"%>
+        		    </div>
+        	    </div>
+
+        		<div class="col-sm-offset-2 ">
+        	  	<%= f.submit "CEER UN COMPTE", class: "btn btn-primary" %>
+        		</div>
+        	  
+ </div> 
+ <!--form group
+-->
+	<% end %>
+ </div>
+ <!--right side
+-->
+	</div>
+
+    <%= stylesheet_link_tag 'new' %>
+
+
+
+    
+
+
